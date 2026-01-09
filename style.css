@@ -70,13 +70,71 @@ nav #menu a:hover {
     background-color: white;
     color: #30B868;
     padding: 10px 15px;
-    border: none;
     border-radius: 100px;
     font-size: 16px;
     font-weight: 500;
     display: inline-flex;
-    gap: 4px;
+    gap: 10px;
     margin-bottom: 16px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+#badge::before {
+    content: "";
+    position: absolute;
+    width: 300%;
+    height: 300%; 
+    background: conic-gradient(
+        from 0deg,
+        transparent 40%,
+        rgba(48, 184, 104, 0.4) 60%, 
+        #30B868 80%,
+        #ffffff 95%,
+        transparent 100%
+    );
+    animation: rotate-glow 2s linear infinite;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    filter: blur(8px) contrast(1.5); 
+}
+#badge::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    background: white;
+    border-radius: 100px;
+    z-index: -1;
+}
+#badge p, #badge img {
+    position: relative;
+    z-index: 2;
+}
+@keyframes rotate-glow {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.live-dot {
+    border-radius: 50%;
+    animation: blink 1.5s infinite ease-in-out;
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.3;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 #banner h1{
     font-size: 72px;
