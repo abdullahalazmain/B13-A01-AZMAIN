@@ -92,3 +92,92 @@ nav #menu a{
     border: solid;
     background-color: transparent;
 }
+/* Header Styles End */
+
+/* Notes Section Styles Start */
+#notes{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+#notes #notes-title{
+    margin-top: 60px;
+}
+#notes #notes-title h2{
+    font-size: 48px;
+    font-weight: 700px;
+    color: black;
+    margin-bottom: 15px;
+}
+#notes #notes-title p{
+    font-size: 16px;
+    color: #627382;
+    margin-bottom: 40px;
+}
+#notes #notes-cards-box{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+
+}
+#notes #notes-cards-box .notes-card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    width: 300px;
+    border-radius: 10px 10px 0 0;
+
+
+}
+#notes #notes-cards-box .notes-card .icon-bg{
+    background-color: #30B868;
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+/* Notes Section Styles End */
+
+/* Second Brain Section Styles Start */
+#second-brain{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 50px;
+   margin-top: 120px;
+ 
+}
+#brain-content{
+    max-width: 487px;
+}
+#brain-content .sub-text {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    color: #30B868;
+    margin-bottom: 16px;
+}
+#brain-content h2 {
+    font-size: 48px;
+    text-align: left;
+    margin-bottom: 16px;
+}
+#brain-content .sub-message {
+    text-align: left;
+    color: #627382;
+    margin-bottom: 40px;
+}
+#brain-content li{
+    list-style: none;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
