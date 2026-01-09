@@ -22,6 +22,10 @@
     display: inline-flex;
     gap: 5px;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.btn:hover {
+    transform: scale(0.95);
 }
 
 
@@ -41,7 +45,14 @@ nav #menu {
 }
 nav #menu a{
     text-decoration: none;
-    color: black;  
+    color: black;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+nav #menu a:hover {
+    color: #30B868;
+    transform: scale(1.1);
+    font-weight: 700;
 }
 /* Banner Section */
 #banner {
@@ -108,7 +119,7 @@ nav #menu a{
 #notes #notes-title h2{
     font-size: 48px;
     font-weight: 700px;
-    color: black;
+    color: #001931;
     margin-bottom: 15px;
 }
 #notes #notes-title p{
@@ -118,7 +129,7 @@ nav #menu a{
 #notes #notes-cards-box{
     display: flex;
     justify-content: space-between;
-    gap: 25px;
+    gap: 20px;
 
 }
 #notes #notes-cards-box .notes-card{
@@ -126,14 +137,12 @@ nav #menu a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    padding: 65px 15px;
     width: 300px;
     border-radius: 10px 10px 0 0;
-
-
 }
 #notes #notes-cards-box .notes-card .icon-bg{
-    background-color: #30B868;
+    background-color: #F95555;
     height: 50px;
     width: 50px;
     border-radius: 30px;
@@ -141,6 +150,9 @@ nav #menu a{
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+}
+#notes #notes-cards-box .notes-card h3{
+    margin-bottom: 16px;
 }
 /* Notes Section Styles End */
 
@@ -166,6 +178,7 @@ nav #menu a{
 #brain-content h2 {
     font-size: 48px;
     text-align: left;
+    color: #001931;
     margin-bottom: 16px;
 }
 #brain-content .sub-message {
@@ -191,10 +204,11 @@ nav #menu a{
 }
 #early-access-box{
     background-color: #F7F6F2;
-    padding: 80px 25%;
+    padding: 80px 16%;
 }
 #early-access-box h2{
     font-size: 40px;
+    color: #001931;
     margin-bottom: 16px;
 }
 #early-access-box p{
@@ -229,6 +243,12 @@ footer{
     margin-top: 16px;
     gap: 10px;
 }
+#social-icons a{
+    transition: transform 0.3s ease;
+}
+#social-icons a:hover {
+    transform: scale(0.95);
+}
 #copyright-tag{
     color: white;
     border-top: 1px solid #ffffff1a;
@@ -236,3 +256,4 @@ footer{
     margin-top: 20px;
     text-align: center;
 }
+/* Footer Section End*/
