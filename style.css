@@ -227,7 +227,7 @@ footer{
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 120px 10% 30px;
+    padding: 100px 10% 30px;
 }
 #main-footer{
     display: flex;
@@ -253,7 +253,7 @@ footer{
     color: white;
     border-top: 1px solid #ffffff1a;
     padding-top: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
     text-align: center;
 }
 /* Footer Section End*/
